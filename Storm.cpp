@@ -59,14 +59,14 @@ void Storm::setStatus(const string& status) { this->status = status; }
 
 // Overloaded stream insertion operator (operator<<)
 ostream& operator<<(ostream& os, const Storm& storm) {
-    os << "=== STORM DETAILS ===" << std::endl;
-    os << "Name: " << storm.name << std::endl;
-    os << "Type: " << storm.type << std::endl;
-    os << "Intensity: " << storm.intensity << " (" << storm.getSeverityDescription() << ")" << std::endl;
+    os << "=== STORM DETAILS ===" << endl;
+    os << "Name: " << storm.name << endl;
+    os << "Type: " << storm.type << endl;
+    os << "Intensity: " << storm.intensity << " (" << storm.getSeverityDescription() << ")" << endl;
     os << "Wind Speed: " << fixed << setprecision(1) << storm.windSpeed << " mph" << endl;
-    os << "Location: " << storm.location << std::endl;
-    os << "Status: " << storm.status << std::endl;
-    os << "===================" << std::endl;
+    os << "Location: " << storm.location << endl;
+    os << "Status: " << storm.status << endl;
+    os << "===================" << endl;
     return os;
 }
 
